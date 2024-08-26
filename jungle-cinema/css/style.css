@@ -172,7 +172,7 @@ div.group {
   content: "";
   display: block;
   width: 14px;
-  background-image: url("../images/별점이미지.svg");
+  background-image: url("../images/star.svg");
   margin-right: 4px;
 }
 
