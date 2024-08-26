@@ -4,4 +4,7 @@
 
 
 ## 과제 목록
-1. [정글 시네마](https://github.com/jihun-io/ESTFE-CSS/tree/main/jungle-cinema)
+1. [두근두근 비밀일기](https://github.com/jihun-io/ESTFE-CSS/tree/main/secret-diary)
+2. [정글 시네마](https://github.com/jihun-io/ESTFE-CSS/tree/main/jungle-cinema)
+3. [버튼](https://github.com/jihun-io/ESTFE-CSS/tree/main/buttons)
+4. [위니브 로그인](https://github.com/jihun-io/ESTFE-CSS/tree/main/weniv-login)
