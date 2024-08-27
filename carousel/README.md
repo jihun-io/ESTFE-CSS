@@ -14,3 +14,6 @@
 - transform을 이용한 캐러셀 애니메이션 작성
 - 좌우 버튼 클릭 시 캐러셀 항목이 넘어가는 스크립트 작성
 - 캐러셀 컨테이너의 width가 너무 길어 편의 상 `html` 요소에 `zoom: 0.5` 스타일 적용
+
+## 링크
+https://jihun-io.github.io/ESTFE-CSS/carousel/
