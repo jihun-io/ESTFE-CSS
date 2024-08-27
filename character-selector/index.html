@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weniv Selector</title>
+  </head>
+  <body>
+    <header>
+      <button class="btn-upload">이미지 업로드</button>
+    </header>
+    <main>
+      <script>
+        function turn(direction) {
+          pics = document.getElementsByTagName("li");
+          picStart = document.getElementById("pics2");
+          picEnd = document.getElementById("pics6");
+          if (direction == 0) {
+            if (picStart.className != "img-1st") {
+              i = 0;
+              while (i < pics.length) {
+                if (pics[i + 1] == undefined) {
+                  pics[i].className = pics[i].className;
+                } else {
+                  pics[i].className = pics[i + 1].className;
+                }
+                i++;
+              }
+            } else {
+              return;
+            }
+          } else if (direction == 1) {
+            if (picEnd.className != "img-1st") {
+              i = pics.length - 1;
+              while (i > 0) {
+                if (pics[i - 1] == undefined) {
+                  pics[i].className = pics[i].className;
+                } else {
+                  pics[i].className = pics[i - 1].className;
+                }
+                i--;
+              }
+            } else {
+              return;
+            }
+          }
+        }
+      </script>
+      <div class="btn-area flex-row">
+        <button onclick="turn(0)">< Prev</button>
+      </div>
+      <div class="container flex-row">
+        <ul class="img-list flex-row">
+          <li id="pics0" class="img-3rd left"></li>
+          <li id="pics1" class="img-3rd left"></li>
+          <li id="pics2" class="img-3rd left">
+            <img class="" src="./images/img1.png" alt="" />
+            <div class="shadow">
+              <img class="reverse" src="./images/img1.png" alt="" />
+            </div>
+          </li>
+          <li id="pics3" class="img-2nd left">
+            <img class="" src="./images/img2.png" alt="" />
+            <div class="shadow">
+              <img class="reverse" src="./images/img2.png" alt="" />
+            </div>
+          </li>
+          <li id="pics4" class="img-1st">
+            <img src="./images/img3.png" alt="" />
+            <div class="shadow">
+              <img class="reverse" src="./images/img3.png" alt="" />
+            </div>
+          </li>
+          <li id="pics5" class="img-2nd right">
+            <img class="" src="./images/img4.png" alt="" />
+            <div class="shadow">
+              <img class="reverse" src="./images/img4.png" alt="" />
+            </div>
+          </li>
+          <li id="pics6" class="img-3rd right">
+            <img class="" src="./images/img5.png" alt="" />
+            <div class="shadow">
+              <img class="reverse" src="./images/img5.png" alt="" />
+            </div>
+          </li>
+          <li id="pics7" class="img-3rd right"></li>
+          <li id="pics8" class="img-3rd right"></li>
+        </ul>
+      </div>
+      <div class="btn-area flex-row">
+        <button onclick="turn(1)">Next ></button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
